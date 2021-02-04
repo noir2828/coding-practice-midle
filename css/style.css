@@ -568,7 +568,7 @@ th.no-border {
 }
 
 .contact-form {
-  width: 100%;
+  max-width: 908px;
   text-align: left;
   background: #fff;
   padding: 10px 20px;
@@ -619,6 +619,18 @@ th.no-border {
   margin-top: 40px;
   background: #EEFBFB;
   border: none;
+  border-radius: 3px;
+}
+
+.name,
+.email {
+  max-width: 499px;
+  width: 100%;
+  height: 43px;
+}
+textarea {
+  max-width: 789px;
+  height: 179px;
 }
 
 .check-box {
