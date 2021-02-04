@@ -1,9 +1,12 @@
 $(function(){
   //ハンバーガーメニュー
-  document.getElementById("menuButton").addEventListener('click',function() {
-    this.classList.toggle("active");
-    document.getElementById("nav").classList.toggle("active");
-    document.getElementById("mask").classList.toggle("active");
+  $('#menuButton').on('click',function(){
+    $(this).toggleClass('active');
+    $('#nav').toggleClass('active');
+    $('#mask').toggleClass('active');
+    $('#nav a[href]').on('click', function(event) {
+      $('#menuButton').trigger('click');
+    });
   })
   //アコーディオン
   $('#question dt').on('click',function() {
